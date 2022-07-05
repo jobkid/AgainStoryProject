@@ -91,7 +91,7 @@
 				<div>소설 이미지</div><div>소설 이미지</div><div>소설 이미지</div><div>소설 이미지</div><div>소설 이미지</div>
 			</div>
 		</div>
-		<a href="admin.jsp">관리자 페이지</a>
 		</form>
+		<h1>0705 수정</h1>
 	</body>
 </html>
