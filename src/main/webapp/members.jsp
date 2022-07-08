@@ -35,7 +35,8 @@
 					result+="<td>"+rs.getString("phone")+"</td>";
 					result+="<td>"+rs.getString("birthday")+"</td>";
 					result+="<td>"+rs.getString("place")+"</td>";
-					result+="<td>"+rs.getString("joindate")+"</td></tr>";
+					result+="<td>"+rs.getString("joindate")+"</td>";
+					result+="<td>"+rs.getString("admin")+"</td></tr>";
 				}
 				
 			}catch(ClassNotFoundException e){
@@ -52,13 +53,13 @@
 				}
 			}
 		%>	
-		
+		<h1>관리자:1, 일반회원:2, 작가:3</h1>
 		<table border="1">
 				<tr>
-					<td>이름</td><td>아이디</td><td>비밀번호</td><td>닉네임</td><td>이메일</td><td>전화번호</td><td>생년월일</td><td>장소</td><td>가입일시</td>
+					<td>이름</td><td>아이디</td><td>비밀번호</td><td>닉네임</td><td>이메일</td><td>전화번호</td><td>생년월일</td><td>장소</td><td>가입일시</td><td>회원등급</td>
 				</tr>
 				<%=result %>
-				<a href="index.jsp">메인으로 돌아가기</a>
 		</table>
+		<a href="index.jsp">메인으로 돌아가기</a>
 	</body>
 </html>

@@ -12,6 +12,7 @@ public class Member {
 	private String birthday;
 	private String place;
 	private String joindate;
+	private String admin;
 	
 	public String getNum() {
 		return num;
@@ -72,6 +73,12 @@ public class Member {
 	}
 	public void setJoindate(String joindate) {
 		this.joindate=joindate;
+	}
+	public String getAdmin() {
+		return admin;
+	}
+	public void setAdmin(String admin) {
+		this.admin = admin;
 	}
 	
 	

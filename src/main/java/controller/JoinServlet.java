@@ -35,6 +35,7 @@ public class JoinServlet extends HttpServlet {
 		String phone = request.getParameter("phone");
 		String birthday = request.getParameter("birthday");
 		String place = request.getParameter("place");
+		String admin = request.getParameter("admin");
 		
 		Member m = new Member();
 		m.setName(name);
@@ -45,6 +46,7 @@ public class JoinServlet extends HttpServlet {
 		m.setPhone(phone);
 		m.setBirthday(birthday);
 		m.setPlace(place);
+		m.setAdmin(admin);
 		
 		MemberDAO mDao=MemberDAO.getInstance();
 		int result = mDao.insertMember(m);

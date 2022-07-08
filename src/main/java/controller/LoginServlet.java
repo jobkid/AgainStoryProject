@@ -37,9 +37,9 @@ public class LoginServlet extends HttpServlet {
 		if(result==1) {
 			Member m=mDAO.getMember(id);
 			HttpSession session=request.getSession();
-			session.setAttribute("loginId", m);
+			session.setAttribute("login", m);
 			request.setAttribute("massage", "로그인에 성공했습니다.");
-			url="check.jsp";
+			url="logincheck.jsp";
 		}else if(result==0) {
 			request.setAttribute("massage", "비밀번호가 맞지 않습니다.");
 		}else if(result==-1) {

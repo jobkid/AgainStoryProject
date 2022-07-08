@@ -13,18 +13,18 @@
 			#ci{
 				margin: 0 auto;
 				padding:0;
+				text-align:center;
+				background-color:#e1c294;
 			}
 			#wrap{
-				width:1200px;
+				width:1204px;
 				margin: 0 auto;
-				border: 10px solid black; 
+				border: 5px solid black; 
 			}
 			hl{
 				margin:0 auto;
 				padding:0;
 				width:100%;
-				height:;
-				background-color:green;
 			}
 			#ci{
 				margin:0 auto;
@@ -45,15 +45,15 @@
 			#image{
 				padding:0;
 				margin:0 auto;
-				width:1200px;
+				width:1204px;
 				height:500px;
-				border:10px solid black;
+				border:5px solid black;
 			}
 			#image div{
-				width:230px;
+				width:236px;
 				height:260px;
 				margin:0 auto;
-				border:5px solid black;
+				border:2px solid black;
 				display:inline-block;
 			}
 			#wrap2{
@@ -61,9 +61,9 @@
 			}
 			#image #hidden{
 				margin:0 auto;
-				width:1198px;
+				width:1202px;
 				height:50px;
-				margin:0 auto;
+				margin:0px auto;
 				border:1px solid black;
 			}
 		</style>
@@ -78,10 +78,11 @@
 				<li><a href="short.jsp">단편모음집</a></li><li><a href="long.jsp">장편연재물</a></li><li><a href="succeed.jsp">연재소설 참가</a></li><li><a href="free.jsp">자유 게시판</a></li><li><a href="post.jsp">베스트 도전</a></li><li><a href="illust.jsp">표지 일러스토 공모</a></li><li><a href="login.jsp">로그인</a></li><li><a href="join.do">회원가입</a></li>
 			</ul>
 		</div>
-		<div id="wrap2">
+		<!--  <div id="wrap2">
 			아이디<input type="text" name="id"><br>
 			비밀번호<input type="text" name="pass"><br>
 			<input type="submit" value="로그인">
+			-->
 		</div>
 		<div>
 			<div id="image">
@@ -93,6 +94,6 @@
 		</div>
 		<a href="admin.jsp">관리자 페이지</a>
 		</form>
-		<h1>0708 오전 9시</h1>
+		<h1>0708 오후 4시 48분</h1>
 	</body>
 </html>

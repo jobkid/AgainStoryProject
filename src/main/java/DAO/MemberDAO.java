@@ -33,7 +33,9 @@ public class MemberDAO {
 		ResultSet rs=null;
 		try {
 			conn=getConnection();
+			
 			pstmt=conn.prepareStatement(sql);
+			pstmt.setString(1, id);
 			rs=pstmt.executeQuery();
 			if(rs.next()) {
 				m=new Member();
@@ -47,6 +49,7 @@ public class MemberDAO {
 				m.setBirthday(rs.getString("birthday"));
 				m.setPlace(rs.getString("place"));
 				m.setJoindate(rs.getString("joindate"));
+				m.setAdmin(rs.getString("admin"));
 				
 			}
 		}catch(Exception e) {
@@ -68,7 +71,7 @@ public class MemberDAO {
 	
 	public int insertMember(Member m) {
 		int result=-1;
-		String sql="insert into members(name, id, pwd, nickname, email, phone, birthday, place) values (?,?,?,?,?,?,?,?)";
+		String sql="insert into members(name, id, pwd, nickname, email, phone, birthday, place, admin) values (?,?,?,?,?,?,?,?,?)";
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		
@@ -83,6 +86,7 @@ public class MemberDAO {
 			pstmt.setString(6, m.getPhone());
 			pstmt.setString(7, m.getBirthday());
 			pstmt.setString(8, m.getPlace());
+			pstmt.setString(9, m.getAdmin());
 			
 			result=pstmt.executeUpdate();
 		}catch(Exception e) {
