@@ -75,7 +75,7 @@
 		<form method="post" action="">
 		<div id="wrap">
 			<ul>
-				<li><a href="short.jsp">단편모음집</a></li><li><a href="long.jsp">장편연재물</a></li><li><a href="succeed.jsp">연재소설 참가</a></li><li><a href="free.jsp">자유 게시판</a></li><li><a href="post.jsp">베스트 도전</a></li><li><a href="illust.jsp">표지 일러스토 공모</a></li><li>로그인</li><li>회원가입</li>
+				<li><a href="short.jsp">단편모음집</a></li><li><a href="long.jsp">장편연재물</a></li><li><a href="succeed.jsp">연재소설 참가</a></li><li><a href="free.jsp">자유 게시판</a></li><li><a href="post.jsp">베스트 도전</a></li><li><a href="illust.jsp">표지 일러스토 공모</a></li><li><a href="login.jsp">로그인</a></li><li><a href="join.do">회원가입</a></li>
 			</ul>
 		</div>
 		<div id="wrap2">
@@ -91,7 +91,8 @@
 				<div>소설 이미지</div><div>소설 이미지</div><div>소설 이미지</div><div>소설 이미지</div><div>소설 이미지</div>
 			</div>
 		</div>
+		<a href="admin.jsp">관리자 페이지</a>
 		</form>
-		<h1>0705 수정</h1>
+		<h1>0708 오전</h1>
 	</body>
 </html>

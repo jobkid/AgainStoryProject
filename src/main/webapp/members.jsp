@@ -58,6 +58,7 @@
 					<td>이름</td><td>아이디</td><td>비밀번호</td><td>닉네임</td><td>이메일</td><td>전화번호</td><td>생년월일</td><td>장소</td><td>가입일시</td>
 				</tr>
 				<%=result %>
+				<a href="index.jsp">메인으로 돌아가기</a>
 		</table>
 	</body>
 </html>

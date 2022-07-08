@@ -12,6 +12,7 @@ public class Member {
 	private String birthday;
 	private String place;
 	private String joindate;
+	
 	public String getNum() {
 		return num;
 	}
@@ -70,7 +71,7 @@ public class Member {
 		return joindate;
 	}
 	public void setJoindate(String joindate) {
-		this.joindate = joindate;
+		this.joindate=joindate;
 	}
 	
 	
