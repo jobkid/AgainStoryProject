@@ -53,6 +53,7 @@
 		</table>
 		<input type="submit" value="회원 가입하기">	
 		</form>
+		<h1>0708 오전 수업 때</h1>
 		<script>
 			/*function idCheck(){
 				if(document.frm.userid.value==""){
