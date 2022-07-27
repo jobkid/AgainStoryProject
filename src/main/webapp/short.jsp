@@ -1,12 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>단편소설 페이지</title>
+	</head>
+	<body>
+		<form method="get" action="ReadPage">
+		<input type="hidden" name="currentPage" value=1>
+			<select name="recordsPage">
+				<option value="5">5개씩 보기</option>
+				<option value="10">10개씩 보기</option>
+				<option value="15">15개씩 보기</option>
+			</select>
+			<input type=button value="보기" onclick="">
+			
+		</form>
+	</body>
 </html>
