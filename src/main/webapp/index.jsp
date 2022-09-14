@@ -44,7 +44,7 @@
 		<h1>안녕하세요.</h1>
 		<div id="wrap">
 			<div id="again">
-				<a href="FirstShortList.do" style = "font-size : 50pt"><input type = "hidden" value = "10" name = "recordsPerPage"><p>Again</p></a><!-- 미리  서블릿을 주지 말 것. -->
+				<a href="FirstShortList.do?number=0" style = "font-size : 50pt"><input type = "hidden" name="number" value="0"><p>Again</p></a><!-- 미리  서블릿을 주지 말 것. -->
 			</div>
 			<div><a href = "#" id="login">로그인</a></div>
 			<div><a href = "register.jsp">회원가입</a></div>

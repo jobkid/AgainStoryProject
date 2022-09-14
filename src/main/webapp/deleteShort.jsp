@@ -1,13 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <!DOCTYPE html>
 <html>
-	<head>
+		<head>
 		<meta charset="utf-8">
-		<title>단편소설</title>
+		<title>삭제 창</title>
 		<style>
 			*{
 				margin : 0 auto;
@@ -21,18 +19,19 @@
 	</head>
 	<body>
 		<div id = "wrap">
-			단편소설 리스트 
+			삭제 단편소설 리스트 
 			<table border="1">
 				<tr>
-					<th>번호</th><th>제목</th><th>작성자</th><th>날짜</th>
+					<th>번호</th><th>제목</th><th>작성자</th><th>날짜</th><th>삭제</th>
 				</tr>
 				<c:forEach items="${firstdata }" var = "firstdata">
-				<tr>
-					<td>${firstdata.getNum() }</td>
-					<td><a href = "ReadContent.do?num=${firstdata.getNum()}">${firstdata.getTitle() }</a></td>
-					<td>${firstdata.getNickname() }</td>
-					<td>${firstdata.getWritingdate() }</td>	
-				</tr>
+					<tr>
+						<td>${firstdata.getNum() }</td>
+						<td><a href = "ReadContent.do?num=${firstdata.getNum()}">${firstdata.getTitle() }</a></td>
+						<td>${firstdata.getNickname() }</td>
+						<td>${firstdata.getWritingdate() }</td>
+						<td>삭제</td>
+					</tr><!-- deleteShort.do?num=${firstdata.getNum() } -->
 				</c:forEach>
 			</table>
 		<form action = "ShowShort.do" method = "get">
@@ -50,18 +49,17 @@
 					<c:when test = "${currentPage eq i}">
 						<li><a>${i}(현재)</a></li>
 					</c:when>
-				<c:otherwise>
+					<c:otherwise>
 						<li><a href="ShowShort.do?currentPage=${i}&recordsPerPage=${recordsPerPage}">${i}</a></li>
-				</c:otherwise>
+					</c:otherwise>
 				</c:choose>
 			</c:forEach>
 		</ul>
 		<form method = "post" action = "write.jsp">
 			<input type = "submit" value = "글쓰기">
 		</form>
-		<form method = "get" action = "FirstShortList.do?number">
+		<form method = "get" action = "deleteShort.do">
 			<input type = "submit" value="삭제">
-			<input type = "hidden" value = "1" name = "number">
 		</form>
 		</div>
 	</body>

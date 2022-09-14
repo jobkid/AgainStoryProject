@@ -58,5 +58,8 @@
 		<form method = "post" action = "write.jsp">
 			<input type = "submit" value = "글쓰기">
 		</form>
+		<form method = "get" action = "deleteShort.do">
+			<input type = "submit" value = "삭제">
+		</form>
 	</body>
 </html>
